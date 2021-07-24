@@ -1,13 +1,13 @@
 #!/bin/bash
 
-LTIME=`stat -c %Z src/**/*.java` 
+LTIME=`find src -type f -regex ".*\.java" -exec stat -c %Z {} +` 
 echo "BUILD DONE"
 javac builder/FileBuilder.java
 java builder.FileBuilder $1
 
 while true
 do
-   ATIME=`stat -c %Z src/**/*.java`
+   ATIME=`find src -type f -regex ".*\.java" -exec stat -c %Z {} +`
 
    if [[ "$ATIME" != "$LTIME" ]]
    then    
