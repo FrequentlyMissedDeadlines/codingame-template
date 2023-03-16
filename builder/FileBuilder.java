@@ -31,7 +31,7 @@ import java.util.Set;
 public class FileBuilder {
     private static final String INCLUDE = "#include ";
     private static final String IMPORT = "import ";
-    private static final String SRC_ROOT_JAVA = "src/main/java/";
+    private static final String SRC_ROOT_JAVA = "src/";
     private static final String SRC_ROOT_CPP_HEADERS = "src/competitiveProgramming/headers/";
     private static final String END_COMMENT = "*/";
 
