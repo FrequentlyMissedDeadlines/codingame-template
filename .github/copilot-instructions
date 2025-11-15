@@ -1,0 +1,10 @@
+# Copilot Instructions
+
+## Code Modification Rules
+
+- **Only modify code in the `src` folder.** You are NOT allowed to modify any code outside of the `src` directory.
+- Always ignore and do not edit any code that is not in the `src` folder (e.g., `build.bash`, `builder/`, etc.).
+- Exception: You may read and use files with `.md` extension (Markdown files) from outside the `src` folder for reference and context.
+- When a user asks for changes, ensure all modifications are made only to files within `src/`.
+- If a request involves code outside the `src` folder, politely inform the user that modifications are restricted to the `src` folder.
+- Only one class per file. Do never have several classes in the same JAVA file.
